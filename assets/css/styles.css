@@ -2268,7 +2268,7 @@ html {
 
 .hero-text-wrapper .hero-title,
 .hero-text-wrapper .hero-before-title {
-  color: #fff;
+  color: #000;
   line-height: 1.1;
 }
 
@@ -2586,7 +2586,7 @@ html {
 
 .has-header-image .header-layout-inline:not(.isSticky) {
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: none;
   background: transparent;
 }
 
