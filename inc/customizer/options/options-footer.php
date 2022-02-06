@@ -553,7 +553,7 @@ $wp_customize->add_setting(
 	'footer_credits',
 	array(
 		'sanitize_callback' => 'bezlik_sanitize_text',
-		'default'           => sprintf( esc_html__( 'Powered by the %1$1s WordPress theme', 'bezlik' ), '<a rel="nofollow" href="https://elfwp.com/themes/bezlik">Elsie</a>' ), // phpcs:ignore WordPress.WP.I18n.MissingTranslatorsComment
+		'default'           => sprintf( esc_html__( 'Copyright by Fundacja Bezlik 2017-%1$1s', 'bezlik' ), date("Y") ),
 		)       
 );
 $wp_customize->add_control( 'footer_credits', array(

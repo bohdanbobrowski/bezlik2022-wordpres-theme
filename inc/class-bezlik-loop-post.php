@@ -138,6 +138,8 @@ if ( !class_exists( 'Bezlik_Loop_Post' ) ) :
 		 * Post element: meta
 		 */
 		public function loop_post_meta() {
+			/*
+			// Hidden for bezlik.org:
 			if ( 'post' === get_post_type() ) :
 
 				$author = get_theme_mod( 'blog_elements_show_author', 1 );
@@ -147,13 +149,13 @@ if ( !class_exists( 'Bezlik_Loop_Post' ) ) :
 					<?php bezlik_post_date_author( $author, $date ); ?>
 				</div><!-- .entry-meta -->
 			<?php endif;
+			*/
 		}	
 		
 		/**
 		 * Post element: excerpt
 		 */
 		public function loop_post_excerpt( $layout_type ) {
-
 			?>
 			<div class="entry-summary">
 				<?php

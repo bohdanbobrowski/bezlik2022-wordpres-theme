@@ -2781,7 +2781,7 @@ html {
 }
 
 .single-post .entry-meta:not(.post-cats) .byline {
-  text-align: left;
+  text-align: left;  
 }
 
 .entry-meta a {
@@ -2790,6 +2790,10 @@ html {
 
 .entry-meta a:hover {
   color: var(--color-accent);
+}
+
+.byline {
+  display: none !important;
 }
 
 .entry-meta .byline a {
@@ -3627,12 +3631,13 @@ h6.is-style-bezlik-no-margins {
 }
 
 .widget_recent_entries .post-date {
+  display: none;
   color: var(--color-gray);
   font-size: var(--font-size-sm);
 }
 
 /* Custom recent posts */
-.bezlik_recent_entries .post-date {
+.bezlik_recent_entries .post-date {  
   vertical-align: top;
   font-size: 13px;
   font-size: .8125rem;

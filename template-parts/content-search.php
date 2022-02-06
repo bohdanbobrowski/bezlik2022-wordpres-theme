@@ -17,7 +17,7 @@
 		<div class="entry-meta">
 			<?php
 			bezlik_posted_on();
-			bezlik_posted_by();
+			// bezlik_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
