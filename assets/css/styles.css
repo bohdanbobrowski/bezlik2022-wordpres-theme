@@ -4293,3 +4293,53 @@ h6.is-style-bezlik-no-margins {
     padding-bottom: 30px;
   }
 }
+
+/* Bezlik custom */
+
+.bezlik-areas-of-activity {
+
+}
+
+.bezlik-areas-of-activity-box {
+  text-align: center;
+}
+
+.bezlik-areas-of-activity-box .box-link {
+  display: block;
+  background-color: var(--color-light-background);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);  
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 18px 10px;
+  min-width: 200px;
+  text-align: center;  
+  margin: 1em 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.bezlik-areas-of-activity-box .box-link:hover {
+  background-color: var(--color-accent-dark);
+  color: #fff;
+}
+
+.bezlik-areas-of-activity-img img {
+  max-height: 10em;
+  padding: 1em;
+  fill: green;
+  opacity: 60%;
+}
+
+.bezlik-areas-of-activity-box:hover .bezlik-areas-of-activity-img img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 100%;
+}
+
+.bezlik-areas-of-activity-text {
+}
+
+.bezlik-areas-of-activity-text p {
+}

@@ -552,6 +552,7 @@ function bezlik_featured_boxes() {
 		$link3 		= get_theme_mod( 'featured_box_link3', '#' );
 
 		?>
+		<a name="bezlik-areas-of-activity"></a>		
 		<div class="featured-boxes">
 			<div class="container">
 				<div class="row">
@@ -580,4 +581,55 @@ function bezlik_featured_boxes() {
 	}
 
 }
-add_action( 'bezlik_after_header', 'bezlik_featured_boxes', 20 );
+add_action( 'bezlik_after_header', 'bezlik_featured_boxes', 30 );
+
+function bezlik_areas_of_activity() {
+	$activity_boxes = [
+		[
+			"success",
+			"Działania wzmacniające nastolatki",
+			"Wspieramy i promujemy działania wzmacniające dziewczyny, nastolatki i młode kobiety. Staramy się poszerzać ich horyzonty i możliwości poprzez przekazanie wiedzy społeczno-politycznej oraz promocję rozwoju.",
+			"#"
+		],
+		[
+			"networking",
+			"Międzynarodowe wymiany młodzieży",
+			"Tworzymy bezpieczną przestrzeń do nauczania międzykulturowego, przezwyciężamy stereotypy, nawiązujemy polsko-niemiecko przyjaźnie i zapraszamy do współpracy trójstronnej grupy z Ukrainy, Białorusi czy Czech.",
+			"#"
+		],
+		[
+			"negotiation",
+			"Edukacja<br/>antydyskryminacyjna",
+			"Kształtujemy kompetencje oraz dostarczamy wiedzę, jak odpowiednio reagować i zapobiegać zjawisku dyskryminacji.",
+			"#"
+		],
+	]
+?>	
+	<div class="bezlik-areas-of-activity">
+		<div class="container">
+			<div class="row">
+				<?php foreach($activity_boxes as $box): ?>
+				<div class="col-md-4">
+					<div class="bezlik-areas-of-activity-box">
+						<div class="bezlik-areas-of-activity-img">
+							<img src="<?= get_stylesheet_directory_uri() ?>/assets/img/<?= $box[0] ?>.svg" alt="<?= $box[1] ?>">
+						</div>
+						<div class="bezlik-areas-of-activity-text">
+							<h5>
+								<a class="box-link" title="<?= $box[1] ?>" href="<?= $box[3] ?>">
+									<?= $box[1] ?>
+								</a>
+							</h5>
+							<p>
+								<?= $box[2] ?>
+							</p>
+						</div>
+					</div>
+				</div>
+				<?php endforeach; ?>
+			</div>
+		</div>
+	</div>
+<?php
+}
+add_action( 'bezlik_after_header', 'bezlik_areas_of_activity', 30 );

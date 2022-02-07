@@ -64,5 +64,5 @@ $card_style = get_theme_mod( 'post_card_style', 'regular' );
 	</main><!-- #main -->
 
 <?php
-do_action( 'bezlik_sidebar' );
+
 get_footer();
