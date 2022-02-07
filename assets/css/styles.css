@@ -4296,10 +4296,6 @@ h6.is-style-bezlik-no-margins {
 
 /* Bezlik custom */
 
-.bezlik-areas-of-activity {
-
-}
-
 .bezlik-areas-of-activity-box {
   text-align: center;
 }
@@ -4336,10 +4332,4 @@ h6.is-style-bezlik-no-margins {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 100%;
-}
-
-.bezlik-areas-of-activity-text {
-}
-
-.bezlik-areas-of-activity-text p {
 }

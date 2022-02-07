@@ -584,6 +584,9 @@ function bezlik_featured_boxes() {
 add_action( 'bezlik_after_header', 'bezlik_featured_boxes', 30 );
 
 function bezlik_areas_of_activity() {
+	if(!is_front_page()){
+		return;
+	}
 	$activity_boxes = [
 		[
 			"success",
