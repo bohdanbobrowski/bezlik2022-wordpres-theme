@@ -32,10 +32,12 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
+"Wygląda na to, że w tym miejscu nic nie znaleziono. Może spróbuj jednego z "
+"poniższych linków lub wyszukaj innej frazy?"
 
 #: 404.php:30
 msgid "Most Used Categories"
-msgstr ""
+msgstr "najczęściej używane kategorie"
 
 #. translators: %1$s: smiley
 #: 404.php:48
@@ -349,7 +351,7 @@ msgstr "O autorze"
 
 #: inc/customizer/custom-controls/class_bezlik_toggle.php:25
 msgid "Configure"
-msgstr ""
+msgstr "Konfiguruj"
 
 #: inc/customizer/custom-controls/repeater/class_bezlik_repeater.php:32
 msgid "Add"
@@ -518,7 +520,7 @@ msgstr "Powiązane"
 
 #: inc/customizer/options/options-blog-single.php:403
 msgid "Comments"
-msgstr ""
+msgstr "Komentarze"
 
 #: inc/customizer/options/options-blog-single.php:415
 msgid "Single posts styling"
@@ -754,11 +756,11 @@ msgstr ""
 
 #: inc/customizer/options/options-blog.php:388
 msgid "Default"
-msgstr ""
+msgstr "Domyślny"
 
 #: inc/customizer/options/options-blog.php:389
 msgid "Over image"
-msgstr ""
+msgstr "Nad obrazkiem"
 
 #: inc/customizer/options/options-blog.php:420
 msgid "Excerpt length"
@@ -767,16 +769,16 @@ msgstr ""
 #: inc/customizer/options/options-blog.php:455,
 #: inc/customizer/options/options-hero.php:308
 msgid "Show author"
-msgstr ""
+msgstr "Wyświetl autora"
 
 #: inc/customizer/options/options-blog.php:474,
 #: inc/customizer/options/options-hero.php:327
 msgid "Show date"
-msgstr ""
+msgstr "Wyświetl datę"
 
 #: inc/customizer/options/options-blog.php:505
 msgid "Read more text"
-msgstr ""
+msgstr "Czytaj więcej"
 
 #: inc/customizer/options/options-blog.php:515
 msgid "Blog archives styling"
@@ -1375,7 +1377,7 @@ msgstr ""
 #. translators: %s: search query.
 #: inc/template-functions.php:342
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Wyniki wyszukiwania dla: %s"
 
 #: inc/template-functions.php:387
 msgid "Share this post"
@@ -1400,11 +1402,11 @@ msgstr ""
 
 #: inc/template-tags.php:269
 msgid "Previous article"
-msgstr ""
+msgstr "Poprzedni wpis"
 
 #: inc/template-tags.php:279
 msgid "Next article"
-msgstr ""
+msgstr "Następny wpis"
 
 #: inc/widgets/class-bezlik-author.php:11
 msgid ""
@@ -1474,7 +1476,7 @@ msgstr ""
 #: woocommerce/add-to-wishlist-remove.php:63,
 #: woocommerce/add-to-wishlist-remove.php:51
 msgid "or"
-msgstr ""
+msgstr "lub"
 
 #: woocommerce/add-to-wishlist-remove.php:64,
 #: woocommerce/add-to-wishlist-remove.php:52
