@@ -183,7 +183,25 @@ class Bezlik_Breadcrumb_Trail {
 	 * @return string
 	 */
 	public function trail() {
-
+		// Bezlik.org
+		$lang = get_bloginfo("language");		
+		if(count($this->items)>2) {
+			if($lang == 'pl-PL') {
+				$this->items[2] = str_replace('January', 'Styczeń', $this->items[2]);
+				$this->items[2] = str_replace('February', 'Luty', $this->items[2]);
+				$this->items[2] = str_replace('March', 'Marzec', $this->items[2]);
+				$this->items[2] = str_replace('April', 'Kwiecień', $this->items[2]);
+				$this->items[2] = str_replace('May', 'Maj', $this->items[2]);
+				$this->items[2] = str_replace('June', 'Czerwiec', $this->items[2]);
+				$this->items[2] = str_replace('July', 'Lipiec', $this->items[2]);
+				$this->items[2] = str_replace('August', 'Sierpień', $this->items[2]);
+				$this->items[2] = str_replace('September', 'Wrzesień', $this->items[2]);
+				$this->items[2] = str_replace('October', 'Pażdziernik', $this->items[2]);
+				$this->items[2] = str_replace('November', 'Listopad', $this->items[2]);
+				$this->items[2] = str_replace('December', 'Grudzień', $this->items[2]);
+			}
+		}
+		
 		// Set up variables that we'll need.
 		$breadcrumb    = '';
 		$item_count    = count( $this->items );
