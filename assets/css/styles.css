@@ -1705,6 +1705,10 @@ html {
   display: none;
 }
 
+ul.menu li img {
+  vertical-align: baseline;
+}
+
 @media screen and (min-width: 1025px) {
   .mobile-header,
   .menu-toggle {
@@ -2630,6 +2634,18 @@ html {
 
 .entry-summary p:last-of-type {
   margin-bottom: 0;
+}
+
+.page.type-page.status-publish.has-post-thumbnail .post-thumbnail {
+  text-align: center;
+}
+
+#post-506 .post-thumbnail img,
+#post-583 .post-thumbnail img,
+#post-585 .post-thumbnail img {
+  width: auto;
+  max-height: 15em;
+  opacity: 60%;
 }
 
 .post-thumbnail {
@@ -4324,7 +4340,6 @@ h6.is-style-bezlik-no-margins {
 .bezlik-areas-of-activity-img img {
   max-height: 10em;
   padding: 1em;
-  fill: green;
   opacity: 60%;
 }
 

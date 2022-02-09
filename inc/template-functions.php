@@ -583,8 +583,9 @@ function bezlik_featured_boxes() {
 }
 add_action( 'bezlik_after_header', 'bezlik_featured_boxes', 30 );
 
-function bezlik_areas_of_activity() {
-	if(!is_front_page()){
+function bezlik_areas_of_activity($forced=false) {
+	
+	if(!$forced and !is_front_page()){
 		return;
 	}
 	$activity_boxes = [
@@ -592,19 +593,19 @@ function bezlik_areas_of_activity() {
 			"success",
 			"Działania wzmacniające nastolatki",
 			"Wspieramy i promujemy działania wzmacniające dziewczyny, nastolatki i młode kobiety. Staramy się poszerzać ich horyzonty i możliwości poprzez przekazanie wiedzy społeczno-politycznej oraz promocję rozwoju.",
-			"#"
+			get_site_url()."/fundacja/obszar-pracy/dzialania-wzmacniajace-nastolatki/"
 		],
 		[
 			"networking",
 			"Międzynarodowe wymiany młodzieży",
 			"Tworzymy bezpieczną przestrzeń do nauczania międzykulturowego, przezwyciężamy stereotypy, nawiązujemy polsko-niemiecko przyjaźnie i zapraszamy do współpracy trójstronnej grupy z Ukrainy, Białorusi czy Czech.",
-			"#"
+			get_site_url()."/fundacja/obszar-pracy/miedzynarodowe-wymiany-mlodziezy/"
 		],
 		[
 			"negotiation",
-			"Edukacja<br/>antydyskryminacyjna",
+			"Edukacja antydyskryminacyjna",
 			"Kształtujemy kompetencje oraz dostarczamy wiedzę, jak odpowiednio reagować i zapobiegać zjawisku dyskryminacji.",
-			"#"
+			get_site_url()."/fundacja/obszar-pracy/edukacja-antydyskryminacyjna"
 		],
 	]
 ?>	
@@ -615,7 +616,7 @@ function bezlik_areas_of_activity() {
 				<div class="col-md-4">
 					<div class="bezlik-areas-of-activity-box">
 						<div class="bezlik-areas-of-activity-img">
-							<img src="<?= get_stylesheet_directory_uri() ?>/assets/img/<?= $box[0] ?>.svg" alt="<?= $box[1] ?>">
+							<img src="<?= get_stylesheet_directory_uri() ?>/assets/img/<?= $box[0] ?>.svg" alt="<?= strip_tags($box[1]) ?>">
 						</div>
 						<div class="bezlik-areas-of-activity-text">
 							<h5>
