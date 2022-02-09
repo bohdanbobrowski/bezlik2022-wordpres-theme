@@ -1709,6 +1709,23 @@ ul.menu li img {
   vertical-align: baseline;
 }
 
+.download-button {
+  background-color: #666 !important;
+  background-image: -webkit-linear-gradient(#777,#666,#555) !important;
+  border-color: #555 !important;
+}
+
+.download-button:hover {
+  background-color: #25d366 !important;
+  background-image: -webkit-linear-gradient(#25d366,#1c9e4c,#22944c) !important;
+  border-color: #22944c !important;
+}
+
+#post-595 .post-thumbnail {
+  /* Miniaturka na podstronie "Latarnie PNWM" */
+  text-align: center;
+}
+
 @media screen and (min-width: 1025px) {
   .mobile-header,
   .menu-toggle {
